@@ -22,7 +22,6 @@
     "@slack/web-api": "^7.0.2",
     "dotenv": "^16.3.1",
     "fluent-ffmpeg": "^2.1.2",
-    "i": "^0.3.7",
     "node-wav": "^0.0.2",
     "npm": "^10.4.0",
     "qrcode-terminal": "^0.12.0",
