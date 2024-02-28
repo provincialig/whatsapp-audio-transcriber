@@ -1,16 +1,14 @@
 {
   "name": "whatsapp-audio-transcriber",
   "version": "1.0.0",
-  "description": "A Node.js WhatsApp Bot to automatically transcribe voice messages using whisper.cpp.",
-  "main": "src/index.ts",
+  "description": "A Node.js WhatsApp Bot to automatically transcribe voice messages using whisper.cpp and send it on Slack.",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "dev": "nodemon",
-    "build": "tsc"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucaboy/whatsapp-audio-transcriber.git"
+    "url": "git+https://github.com/provincialig/whatsapp-audio-transcriber.git"
   },
   "keywords": [
     "speech-to-text",
@@ -21,22 +19,21 @@
   "author": "Luca Chianese",
   "license": "GPL-3.0",
   "dependencies": {
+    "@slack/web-api": "^7.0.2",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2",
     "fluent-ffmpeg": "^2.1.2",
+    "i": "^0.3.7",
     "node-wav": "^0.0.2",
-    "qrcode": "^1.5.3",
+    "npm": "^10.4.0",
+    "qrcode-terminal": "^0.12.0",
     "smart-whisper": "^0.7.0",
     "whatsapp-web.js": "^1.23.0"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/fluent-ffmpeg": "^2.1.24",
-    "@types/node": "^20.10.8",
-    "@types/node-wav": "^0.0.3",
-    "@types/qrcode": "^1.5.5",
-    "nodemon": "^3.0.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1"
   }
 }
